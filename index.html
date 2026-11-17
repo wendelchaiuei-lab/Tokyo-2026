@@ -1,0 +1,231 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>11/21 爸媽東京一日遊</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700&family=Shippori+Mincho:wght@500;700&display=swap">
+<style>
+:root{
+  /* layout: notebook-like single column, one large illustrated cover, thin-lined rounded cards on oat paper */
+  --cream:#FBF7EE; --paper:#F4EDDD; --card:#FFFCF5; --oat:#E4D8C0; --mist:#D3DFE4; --mist-deep:#8FA5B1;
+  --blue-ink:#4A6676; --tan:#A88F6F; --brown:#4B3A2D; --brown-soft:#76644F; --line:rgba(75,58,45,.16);
+  --flag-bg:#F1E3CC; --flag-ink:#7A4F27;
+  --serif:'Shippori Mincho','Noto Serif TC','Hiragino Mincho ProN','Yu Mincho',serif;
+  --latin:'Cormorant Garamond','Shippori Mincho',serif;
+  --sans:'Noto Sans TC','Hiragino Sans','PingFang TC','Microsoft JhengHei',sans-serif;
+  color-scheme:light;
+}
+html{background:var(--cream);scroll-behavior:auto}
+body{margin:0;background:var(--cream);color:var(--brown);font:400 16px/1.75 var(--sans);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-block:12px 28px;-webkit-text-size-adjust:100%}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--cream);z-index:30}
+*{box-sizing:border-box}
+h1,h2,h3,h4,p,ul,ol{margin:0}
+a{color:var(--blue-ink)}
+:focus-visible{outline:2px solid var(--blue-ink);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto}
+.col{max-width:760px;margin:0 auto}
+
+/* hero */
+.frame{position:relative;border-radius:30px;overflow:hidden;aspect-ratio:4/5;background:var(--mist);isolation:isolate}
+@media (min-width:760px){.frame{aspect-ratio:16/9}}
+.frame>svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.frame::after{content:"";position:absolute;inset:10px;border:1px solid rgba(255,255,255,.7);border-radius:21px;pointer-events:none}
+.cover{position:absolute;inset:0;padding:clamp(24px,4.4vw,46px);display:flex;flex-direction:column;justify-content:space-between}
+.eyebrow{font:500 .7rem/1.5 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--brown-soft)}
+h1.date{margin-top:8px;font:600 clamp(5.4rem,25vw,11.5rem)/.82 var(--latin);letter-spacing:-.03em;color:var(--brown)}
+.dateline{margin-top:14px;font:600 1.05rem/1.4 var(--latin);letter-spacing:.26em;color:var(--brown)}
+.dateline span{font:500 .92rem var(--sans);letter-spacing:.18em;color:var(--brown-soft);margin-left:.6em}
+.place{align-self:flex-start;background:rgba(251,247,238,.9);border:1px solid var(--line);border-radius:18px;padding:12px 18px}
+.place b{display:block;font:700 1.22rem/1.4 var(--serif);letter-spacing:.14em}
+.place small{display:block;margin-top:2px;font:500 .64rem/1.4 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--brown-soft)}
+
+.intro{position:relative;max-width:760px;margin:-28px auto 0;background:var(--paper);border:1px solid var(--line);border-radius:26px;padding:26px 24px 24px}
+.kicker{font:italic 500 1.02rem/1.3 var(--latin);letter-spacing:.08em;color:var(--blue-ink)}
+.intro h2{margin-top:2px;font:700 1.4rem/1.4 var(--serif);letter-spacing:.08em}
+.intro p.lead{margin-top:12px;font-size:.98rem}
+.route{list-style:none;padding:0;margin-top:18px;display:flex;flex-wrap:wrap;gap:8px 4px}
+.route li{font-size:.82rem;line-height:1.4;padding:5px 12px;border:1px solid var(--line);border-radius:999px;background:var(--cream)}
+.route li:not(:last-child)::after{content:"›";margin-left:9px;color:var(--tan)}
+.route li:not(:last-child){padding-right:8px}
+.legend{margin-top:16px;display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.8rem;color:var(--brown-soft)}
+.advice{margin-top:14px;padding-top:14px;border-top:1px solid var(--line);font-size:.88rem;color:var(--brown-soft)}
+
+/* plan switch */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;margin-top:24px;padding:10px 0;background:var(--cream);box-shadow:0 1px 0 var(--line)}
+.bar .in{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:10px}
+.seg{flex:1;min-width:0;display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:4px;background:var(--paper);border:1px solid var(--line);border-radius:999px}
+.seg button{font:inherit;line-height:1.3;border:0;background:transparent;color:var(--brown-soft);padding:7px 8px;border-radius:999px;cursor:pointer;text-align:center;min-width:0}
+.seg button b{display:block;font-weight:700;font-size:.92rem;color:inherit}
+.seg button small{display:block;font-size:.7rem;opacity:.85}
+.seg button[aria-selected="true"]{background:var(--brown);color:var(--cream)}
+.chk{flex:none;font-size:.76rem;line-height:1.3;text-align:center;padding:7px 11px;border-radius:14px;background:var(--flag-bg);color:var(--flag-ink);text-decoration:none;border:1px dashed rgba(122,79,39,.45)}
+
+/* sections */
+.sec{padding-top:46px}
+.sec h2{font:700 1.5rem/1.4 var(--serif);letter-spacing:.07em;margin-top:2px}
+.sec .range{margin-top:6px;font-size:.88rem;color:var(--brown-soft)}
+.sec .note{margin-top:12px;font-size:.92rem;color:var(--brown-soft)}
+.sec h5{font:700 1.02rem/1.5 var(--serif);letter-spacing:.06em;margin-top:34px;margin-bottom:12px}
+#afternoon{scroll-margin-top:92px}
+
+/* timeline */
+.tl{list-style:none;margin:20px 0 0;padding:0}
+.stop{position:relative;display:grid;grid-template-columns:4.3rem 13px minmax(0,1fr);column-gap:12px;padding-bottom:16px}
+.stop::before{content:"";position:absolute;left:calc(4.3rem + 12px + 6px);top:16px;bottom:-4px;width:1px;background:var(--line)}
+.stop:last-child::before{display:none}
+.t{text-align:right;padding-top:12px;font-variant-numeric:tabular-nums}
+.t b{display:block;font:600 1.18rem/1.2 var(--latin);letter-spacing:.02em}
+.t span{display:block;font-size:.7rem;line-height:1.4;color:var(--brown-soft)}
+.dot{position:relative;z-index:1;width:13px;height:13px;margin-top:17px;border-radius:50%;background:var(--cream);border:1.5px solid var(--tan)}
+.dot.key{background:var(--mist-deep);border-color:var(--mist-deep)}
+.card{min-width:0;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:13px 16px 13px}
+.card.key{box-shadow:0 10px 22px -16px rgba(75,58,45,.45)}
+.card h3,.shop h4{font:700 1.06rem/1.55 var(--serif);letter-spacing:.04em}
+.card h3 small,.shop h4 small{font:500 .72rem var(--sans);letter-spacing:.04em;color:var(--brown-soft);margin-left:.3em}
+.card p{margin-top:3px;font-size:.92rem;line-height:1.7}
+.pri{display:inline-block;margin-right:.45em;font:700 .86rem/1 var(--sans);color:var(--tan)}
+.pri.opt{color:var(--brown-soft)}
+.loc{display:inline-block;margin-left:.5em;vertical-align:.1em;font:500 .7rem/1.5 var(--sans);letter-spacing:.04em;color:var(--blue-ink);border:1px solid rgba(74,102,118,.35);border-radius:999px;padding:0 9px;background:#EEF3F4}
+.meta{display:flex;flex-wrap:wrap;gap:6px 8px;margin-top:9px;align-items:center}
+.go{font-size:.76rem;line-height:1.5;color:var(--brown-soft)}
+.go i{font-style:normal;font-size:.66rem;letter-spacing:.14em;margin-right:6px;padding:1px 7px;border-radius:999px;background:var(--paper);border:1px solid var(--line)}
+.act{font-size:.76rem;line-height:1.5;padding:1px 10px;border-radius:999px;border:1px solid rgba(74,102,118,.4);text-decoration:none}
+.flag{font-size:.72rem;line-height:1.5;padding:1px 9px;border-radius:999px;background:var(--flag-bg);color:var(--flag-ink);border:1px dashed rgba(122,79,39,.5);text-decoration:none}
+.fork{margin-top:6px;border:1px dashed var(--tan);border-radius:20px;padding:15px 18px;background:var(--paper)}
+.fork b{font:700 1rem var(--serif);letter-spacing:.06em}
+.fork p{margin-top:4px;font-size:.9rem;color:var(--brown-soft)}
+
+/* panels */
+.pcard{margin-top:22px;border:1px solid var(--line);border-radius:24px;padding:20px 20px 4px;background:var(--paper)}
+.pcard .tl{margin-top:16px}
+.pcard .card{background:var(--card)}
+.shops{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));gap:12px}
+.shop{min-width:0;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+.shop p{margin-top:4px;font-size:.9rem;line-height:1.7}
+.shop .tag{display:block;font-size:.7rem;letter-spacing:.12em;color:var(--blue-ink);margin-bottom:2px}
+.rows{margin-top:16px;display:grid;gap:8px}
+.row{display:grid;grid-template-columns:minmax(0,9.2rem) minmax(0,1fr);gap:4px 14px;padding:11px 14px;background:var(--card);border:1px solid var(--line);border-radius:14px;font-size:.9rem;line-height:1.65}
+.row b{font-weight:700}
+@media (max-width:480px){.row{grid-template-columns:1fr}}
+.links{margin-top:16px;display:flex;flex-wrap:wrap;gap:8px}
+.links a{font-size:.84rem;padding:6px 14px;border-radius:999px;border:1px solid rgba(74,102,118,.4);text-decoration:none;background:var(--card)}
+
+/* confirm */
+.check{margin-top:46px;border:1px solid var(--line);border-radius:26px;padding:24px 22px;background:var(--paper)}
+.check h2{font:700 1.4rem/1.4 var(--serif);letter-spacing:.07em}
+.check ol{list-style:none;padding:0;margin-top:16px;display:grid;gap:12px}
+.check li{display:grid;grid-template-columns:2rem minmax(0,1fr);gap:12px;padding:14px 16px;background:var(--card);border:1px solid var(--line);border-radius:16px;scroll-margin-top:90px}
+.check li>i{font:600 1.2rem/1.5 var(--latin);font-style:normal;text-align:center;color:var(--flag-ink)}
+.check li b{display:block;font-size:.95rem}
+.check li p{margin-top:3px;font-size:.88rem;line-height:1.7;color:var(--brown-soft)}
+.check li .where{font-size:.76rem;margin-top:6px}
+.swt{margin-top:18px;display:flex;align-items:center;gap:10px;font-size:.84rem;color:var(--brown-soft)}
+.swt input{width:18px;height:18px;accent-color:var(--brown)}
+body.hide-flags .flag,body.hide-flags .check-body,body.hide-flags .chk{display:none}
+body.hide-flags .check{padding:14px 18px}
+body.hide-flags .check h2{display:none}
+body.hide-flags .swt{margin-top:0}
+.foot{margin-top:34px;padding-top:18px;border-top:1px solid var(--line);font-size:.78rem;line-height:1.8;color:var(--brown-soft)}
+@media (min-width:760px){
+  body{font-size:17px}
+  .intro{padding:34px 40px 30px}
+  .pcard{padding:26px 28px 8px}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+<div class="wrap">
+<header class="frame"><svg viewBox="0 0 1000 600" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="清澄庭園的池塘與踏石，遠處是深川不動堂的屋簷，以奶油藍與米色描繪的插畫">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#CFDDE3"/><stop offset=".55" stop-color="#E9ECE4"/><stop offset="1" stop-color="#F6EEDD"/></linearGradient>
+<linearGradient id="water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DCE5E6"/><stop offset="1" stop-color="#B9CCD4"/></linearGradient>
+<g id="temple">
+<rect x="630" y="296" width="76" height="22" fill="#E3DCCB"/>
+<path d="M524 350 C584 350 640 340 668 300 C696 340 752 350 812 350 L796 364 L540 364 Z" fill="#7F939D"/>
+<path d="M606 286 C640 284 652 268 668 248 C684 268 696 284 730 286 L722 296 L614 296 Z" fill="#7F939D"/>
+<line x1="668" y1="234" x2="668" y2="250" stroke="#6F8490" stroke-width="3"/>
+<rect x="556" y="364" width="224" height="34" fill="#E8E0CF"/>
+<g stroke="#A08F7A" stroke-width="2"><line x1="584" y1="364" x2="584" y2="398"/><line x1="612" y1="364" x2="612" y2="398"/><line x1="640" y1="364" x2="640" y2="398"/><line x1="668" y1="364" x2="668" y2="398"/><line x1="696" y1="364" x2="696" y2="398"/><line x1="724" y1="364" x2="724" y2="398"/><line x1="752" y1="364" x2="752" y2="398"/></g>
+<rect x="548" y="398" width="240" height="6" fill="#B9AB96"/>
+</g>
+</defs>
+<rect width="1000" height="600" fill="url(#sky)"/>
+<circle cx="610" cy="150" r="98" fill="#F7EDD6" opacity=".38"/>
+<circle cx="610" cy="150" r="64" fill="#F7EDD6" opacity=".95"/>
+<path d="M0 360 C60 330 110 345 170 335 C230 322 280 350 340 338 C410 322 450 345 520 336 C600 326 650 348 720 338 C790 326 850 346 920 334 C960 328 985 336 1000 340 L1000 410 L0 410 Z" fill="#C6D3D6" opacity=".85"/>
+<path d="M0 388 C80 370 160 382 250 374 C340 366 420 384 520 378 C640 372 740 386 860 376 C920 372 970 380 1000 382 L1000 412 L0 412 Z" fill="#B3C3C8"/>
+<g opacity=".8"><circle cx="722" cy="334" r="24" fill="#CBAE84"/><circle cx="748" cy="344" r="20" fill="#D9C29B"/><circle cx="702" cy="348" r="18" fill="#D9C29B"/><circle cx="736" cy="318" r="16" fill="#C9AA7C"/><circle cx="766" cy="332" r="14" fill="#CBAE84"/></g>
+<g opacity=".8"><circle cx="418" cy="352" r="18" fill="#D9C29B"/><circle cx="436" cy="344" r="14" fill="#CBAE84"/><circle cx="404" cy="340" r="12" fill="#CBAE84"/></g>
+<use href="#temple" transform="translate(-100 0)"/>
+<g transform="translate(-30 0)">
+<path d="M250 410 C280 398 330 396 372 400 C404 404 420 410 430 412 L250 414 Z" fill="#B8C3BF"/>
+<path d="M334 406 C328 372 345 352 322 320 C312 306 318 294 330 286" fill="none" stroke="#6A5646" stroke-width="7" stroke-linecap="round"/>
+<path d="M326 340 C306 336 296 326 288 312 M338 318 C352 312 360 296 364 284" fill="none" stroke="#6A5646" stroke-width="4" stroke-linecap="round"/>
+<ellipse cx="292" cy="306" rx="56" ry="13" fill="#8EA2A8"/>
+<ellipse cx="362" cy="278" rx="50" ry="11" fill="#9DB0B5"/>
+<ellipse cx="326" cy="256" rx="40" ry="10" fill="#8EA2A8"/>
+<ellipse cx="270" cy="332" rx="30" ry="8" fill="#9DB0B5"/>
+</g>
+<rect y="404" width="1000" height="196" fill="url(#water)"/>
+<use href="#temple" transform="translate(-100 808) scale(1 -1)" opacity=".2"/>
+<g stroke="#F6F1E4" stroke-width="2" stroke-linecap="round" opacity=".65">
+<line x1="440" y1="418" x2="700" y2="418"/><line x1="470" y1="432" x2="660" y2="432"/><line x1="410" y1="448" x2="720" y2="448"/><line x1="500" y1="466" x2="760" y2="466"/><line x1="380" y1="486" x2="640" y2="486"/><line x1="300" y1="510" x2="520" y2="510"/><line x1="560" y1="540" x2="880" y2="540"/><line x1="120" y1="560" x2="400" y2="560"/>
+</g>
+<g fill="none" stroke="#F6F1E4" stroke-width="1.5" opacity=".8">
+<ellipse cx="690" cy="568" rx="58" ry="14"/><ellipse cx="652" cy="548" rx="50" ry="12"/><ellipse cx="616" cy="530" rx="44" ry="11"/><ellipse cx="584" cy="514" rx="40" ry="10"/>
+</g>
+<g>
+<ellipse cx="690" cy="572" rx="36" ry="10" fill="#4B3A2D" opacity=".18"/><ellipse cx="690" cy="567" rx="36" ry="11" fill="#8A7B6A"/><ellipse cx="689" cy="564" rx="26" ry="6" fill="#B7A892"/>
+<ellipse cx="652" cy="552" rx="32" ry="9" fill="#4B3A2D" opacity=".18"/><ellipse cx="652" cy="547" rx="32" ry="10" fill="#8A7B6A"/><ellipse cx="651" cy="544" rx="23" ry="5.5" fill="#B7A892"/>
+<ellipse cx="616" cy="534" rx="29" ry="8" fill="#4B3A2D" opacity=".18"/><ellipse cx="616" cy="529" rx="29" ry="9" fill="#8A7B6A"/><ellipse cx="615" cy="526" rx="21" ry="5" fill="#B7A892"/>
+<ellipse cx="584" cy="518" rx="26" ry="7" fill="#4B3A2D" opacity=".18"/><ellipse cx="584" cy="513" rx="26" ry="8" fill="#8A7B6A"/><ellipse cx="583" cy="510" rx="19" ry="4.5" fill="#B7A892"/>
+<ellipse cx="556" cy="504" rx="23" ry="6" fill="#4B3A2D" opacity=".18"/><ellipse cx="556" cy="500" rx="23" ry="7" fill="#8A7B6A"/><ellipse cx="555" cy="497" rx="17" ry="4" fill="#B7A892"/>
+<ellipse cx="532" cy="492" rx="20" ry="5" fill="#4B3A2D" opacity=".18"/><ellipse cx="532" cy="488" rx="20" ry="6" fill="#8A7B6A"/><ellipse cx="531" cy="486" rx="14" ry="3.5" fill="#B7A892"/>
+<ellipse cx="512" cy="482" rx="18" ry="4.5" fill="#4B3A2D" opacity=".18"/><ellipse cx="512" cy="478" rx="18" ry="5.5" fill="#8A7B6A"/><ellipse cx="511" cy="476" rx="12" ry="3" fill="#B7A892"/>
+</g>
+<g fill="#C9AA7C" opacity=".85"><ellipse cx="820" cy="520" rx="10" ry="3.5" transform="rotate(-18 820 520)"/><ellipse cx="860" cy="560" rx="8" ry="3" transform="rotate(12 860 560)"/><ellipse cx="760" cy="486" rx="7" ry="2.6" transform="rotate(-8 760 486)"/></g>
+</svg><div class="cover"><div><p class="eyebrow">Tokyo ・ 爸媽東京一日遊</p><h1 class="date">11/21</h1><p class="dateline">2026.11.21<span>SAT</span></p></div><div class="place"><b>清澄白河 ・ 門前仲町</b><small>Kiyosumi-Shirakawa / Monzen-Nakacho</small></div></div></header>
+<section class="intro"><p class="kicker">One day in Fukagawa</p><h2>一天的流向</h2><p class="lead">從押上的飯店出發，先到清澄庭園看池泉與秋色，再去日本第一間 Blue Bottle 喝杯咖啡。接著慢慢逛深川資料館通り的老店與小物，到門前仲町吃一碗深川飯，下午走過參道，在深川不動堂參拜；15:00 有護摩祈福儀式。傍晚有兩種收尾：方案 A 到月島吃文字燒，方案 B 回押上在晴空塔購物。</p><ul class="route" aria-label="一日路線"><li>押上</li><li>清澄庭園</li><li>Blue Bottle</li><li>深川資料館通り</li><li>門前仲町</li><li>A 月島 ／ B 晴空塔</li><li>押上</li></ul><div class="legend"><span><span class="pri key">★</span>優先逛</span><span><span class="pri opt">○</span>有時間再逛</span><span>交通時間為估計，實際路線以 Google Maps 當日顯示為準</span></div><p class="advice">下午分成兩個版本，依爸媽的體力，以及 11/20 是否已逛過晴空塔來選。原對話建議以方案 A 為主行程，方案 B 是隨時可以切換的備案。</p></section>
+<nav class="bar" aria-label="下午行程切換"><div class="in"><div class="seg" role="tablist" aria-label="下午方案"><button type="button" role="tab" id="tab-a" aria-controls="panel-a" aria-selected="true"><b>方案 A</b><small>月島文字燒</small></button><button type="button" role="tab" id="tab-b" aria-controls="panel-b" aria-selected="false" tabindex="-1"><b>方案 B</b><small>晴空塔購物</small></button></div><a class="chk" href="#check">待確認<br>7 項</a></div></nav>
+<main class="col">
+<section class="sec" id="common"><p class="kicker">Morning to early afternoon</p><h2>共同行程</h2><p class="range">08:30 – 15:30 ・ 方案 A、B 相同</p><ol class="tl"><li class="stop"><div class="t"><b>08:30</b><span>至 09:20</span></div><i class="dot" aria-hidden="true"></i><div class="card"><h3>京成 Richmond Hotel 東京押上</h3><p>早餐、準備出門。</p><div class="meta"><span class="go"><i>導航</i>前往清澄庭園</span><a class="act" href="https://www.google.com/maps/search/?api=1&amp;query=Keisei+Richmond+Hotel+Tokyo+Oshiage" target="_blank" rel="noopener">地圖</a></div></div></li><li class="stop"><div class="t"><b>09:20</b><span>至 09:45</span></div><i class="dot" aria-hidden="true"></i><div class="card"><h3>押上 → 清澄白河</h3><p>半藏門線 Z 往澀谷方向，直達清澄白河，出站再步行至庭園。</p><div class="meta"><span class="go"><i>導航</i>地鐵＋步行</span></div></div></li><li class="stop"><div class="t"><b>09:45</b><span>至 10:50</span></div><i class="dot key" aria-hidden="true"></i><div class="card key"><h3><span class="pri key" title="優先逛">★</span>清澄庭園 <small>Kiyosumi Gardens</small></h3><p>日式池塘、石橋、秋季風景。成人 ¥150，65 歲以上 ¥70，09:00 開園。</p><div class="meta"><span class="go"><i>導航</i>步行到 Blue Bottle</span><a class="act" href="https://www.google.com/maps/search/?api=1&amp;query=Kiyosumi+Gardens+Tokyo" target="_blank" rel="noopener">地圖</a></div></div></li><li class="stop"><div class="t"><b>10:50</b><span>至 11:05</span></div><i class="dot" aria-hidden="true"></i><div class="card"><h3>步行前往咖啡廳</h3><p>約 10–15 分鐘。Blue Bottle 需要稍微往南繞，但保留這一站仍合理。</p><div class="meta"><span class="go"><i>導航</i>步行</span></div></div></li><li class="stop"><div class="t"><b>11:05</b><span>至 11:40</span></div><i class="dot key" aria-hidden="true"></i><div class="card key"><h3><span class="pri key" title="優先逛">★</span>Blue Bottle Coffee 清澄白河 <small>Flagship Cafe</small></h3><p>日本第一間 Blue Bottle，舊倉庫改造。喝咖啡、吃甜點。週六可能排隊。</p><div class="meta"><span class="go"><i>導航</i>前往商店街</span><a class="act" href="https://www.google.com/maps/search/?api=1&amp;query=Blue+Bottle+Coffee+Kiyosumi-Shirakawa+Flagship+Cafe" target="_blank" rel="noopener">地圖</a></div></div></li><li class="stop"><div class="t"><b>11:40</b><span>至 12:55</span></div><i class="dot" aria-hidden="true"></i><div class="card"><h3>深川資料館通り商店街</h3><p>逛傳統零食、和風布料、陶器、日式小店。建議挑 3–4 間進去即可，全部候選店家列在下方「店家備忘」。</p><div class="meta"><span class="go"><i>導航</i>前往門前仲町</span><a class="act" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%B7%B1%E5%B7%9D%E8%B3%87%E6%96%99%E9%A4%A8%E9%80%9A%E3%82%8A%E5%95%86%E5%BA%97%E8%A1%97" target="_blank" rel="noopener">地圖</a><a class="act" href="#shops-1">看店家備忘</a><a class="flag" href="#check-1" aria-label="待確認事項 1">待確認 1</a></div></div></li><li class="stop"><div class="t"><b>12:55</b><span>至 13:20</span></div><i class="dot" aria-hidden="true"></i><div class="card"><h3>前往門前仲町</h3><p>步行約 20–30 分鐘，視最後逛到哪家店而定；累了可回清澄白河站搭大江戶線一站。</p><div class="meta"><span class="go"><i>導航</i>步行／地鐵</span><a class="flag" href="#check-2" aria-label="待確認事項 2">待確認 2</a></div></div></li><li class="stop"><div class="t"><b>13:20</b><span>至 14:10</span></div><i class="dot key" aria-hidden="true"></i><div class="card key"><h3><span class="pri key" title="優先逛">★</span>深川宿 富岡八幡店</h3><p>推薦傳統深川飯：味噌湯汁拌蛤蜊飯、醬油炊飯。○ 備選：門前茶屋、深川萬寿庵蕎麥麵。</p><div class="meta"><span class="go"><i>導航</i>前往參道</span><a class="act" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%B7%B1%E5%B7%9D%E5%AE%BF+%E5%AF%8C%E5%B2%A1%E5%85%AB%E5%B9%A1%E5%BA%97" target="_blank" rel="noopener">地圖</a></div></div></li><li class="stop"><div class="t"><b>14:10</b><span>至 14:40</span></div><i class="dot" aria-hidden="true"></i><div class="card"><h3>人情深川ご利益通り</h3><p>參道商店街。★ 梅花亭、近為；○ 深川伊勢屋。推薦和菓子、傳統漬物。</p><div class="meta"><span class="go"><i>導航</i>步行至不動堂</span><a class="act" href="https://www.google.com/maps/search/?api=1&amp;query=%E4%BA%BA%E6%83%85%E6%B7%B1%E5%B7%9D%E3%81%94%E5%88%A9%E7%9B%8A%E9%80%9A%E3%82%8A" target="_blank" rel="noopener">地圖</a><a class="act" href="#shops-2">看店家備忘</a></div></div></li><li class="stop"><div class="t"><b>14:40</b><span>至 15:30</span></div><i class="dot key" aria-hidden="true"></i><div class="card key"><h3><span class="pri key" title="優先逛">★</span>深川不動堂 <small>成田山東京別院</small></h3><p>參拜、欣賞建築，15:00 可體驗護摩儀式。若想參加，建議 14:45 前到。寺方確認每日有 15:00 場次，不需要事先預約祈禱，但建議提早抵達。</p><div class="meta"><span class="go"><i>導航</i>搭地鐵離開（A 月島 ／ B 押上）</span><a class="act" href="https://www.google.com/maps/search/?api=1&amp;query=Fukagawa+Fudodo+Tokyo" target="_blank" rel="noopener">地圖</a><a class="flag" href="#check-3" aria-label="待確認事項 3">待確認 3</a></div></div></li></ol><div class="fork"><b>15:30 之後分成兩條路</b><p>用上方的切換選擇下午：A 往月島吃文字燒，B 回押上逛晴空塔。</p></div></section>
+<section class="sec" id="afternoon" aria-label="下午行程">
+<div id="panel-a" role="tabpanel" aria-labelledby="tab-a"><p class="kicker">Plan A</p><h2>方案 A｜月島文字燒</h2><p class="range">15:30 – 19:35 後 ・ 原本行程</p><div class="pcard"><ol class="tl"><li class="stop"><div class="t"><b>15:30</b><span>至 16:05</span></div><i class="dot" aria-hidden="true"></i><div class="card"><h3>門前仲町 → 月島</h3><p>大江戶線 E，往大門、六本木方向，下一站月島。7 號出口出站。</p><div class="meta"><span class="go"><i>導航</i>地鐵一站</span><a class="act" href="https://www.google.com/maps/dir/?api=1&amp;origin=Fukagawa+Fudodo+Tokyo&amp;destination=Tsukishima+Monja+Street+Tokyo&amp;travelmode=transit" target="_blank" rel="noopener">路線導航</a></div></div></li><li class="stop"><div class="t"><b>16:05</b><span>至 17:20</span></div><i class="dot key" aria-hidden="true"></i><div class="card key"><h3><span class="pri key" title="優先逛">★</span>月島文字燒商店街</h3><p>沿西仲通り散步，看文字燒、在地小店與巷弄。可逛到想吃的店，不需整段走完。</p><div class="meta"><span class="go"><i>導航</i>商店街步行路線</span><a class="act" href="https://www.google.com/maps/search/?api=1&amp;query=Tsukishima+Monja+Street+Tokyo" target="_blank" rel="noopener">地圖</a><a class="flag" href="#check-4" aria-label="待確認事項 4">待確認 4</a></div></div></li><li class="stop"><div class="t"><b>17:20</b><span>至 18:50</span></div><i class="dot key" aria-hidden="true"></i><div class="card key"><h3><span class="pri key" title="優先逛">★</span>月島文字燒晚餐</h3><p>三選一：もん吉 本店、もへじ 本店、麦 西仲店。第一次吃可請店員協助製作。</p><div class="meta"><span class="go"><i>導航</i>回押上飯店</span><a class="act" href="#dinner">看三家比較</a></div></div></li><li class="stop"><div class="t"><b>18:50</b><span>至 19:35</span></div><i class="dot" aria-hidden="true"></i><div class="card"><h3>月島 → 押上飯店</h3><p>月島搭大江戶線往門前仲町方向，在清澄白河轉半藏門線往押上。</p><div class="meta"><span class="go"><i>導航</i>地鐵轉乘一次</span><a class="act" href="https://www.google.com/maps/search/?api=1&amp;query=Keisei+Richmond+Hotel+Tokyo+Oshiage" target="_blank" rel="noopener">地圖</a></div></div></li><li class="stop"><div class="t"><b>19:35</b><span>之後</span></div><i class="dot" aria-hidden="true"></i><div class="card"><h3>回飯店休息</h3><p>結束當天行程，隔天不用再跑景點。</p></div></li></ol></div><h5 id="dinner">月島晚餐三選一<a class="flag" href="#check-4" aria-label="待確認事項 4">待確認 4</a></h5><div class="shops"><article class="shop"><span class="tag">傳統老店／高湯文字燒</span><h4>もん吉 本店 <small>Monkichi</small></h4><p>適合想感受老式文字燒店氣氛。官方公布 11:00–22:00，提供電話預約。官網目前標示本店允許吸菸，若爸媽介意煙味，建議優先選其他店。</p><div class="meta"><a class="act" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9C%88%E5%B3%B6+%E3%82%82%E3%82%93%E5%90%89+%E6%9C%AC%E5%BA%97" target="_blank" rel="noopener">地圖</a></div></article><article class="shop"><span class="tag">人氣海鮮文字燒</span><h4>もへじ 本店 <small>Moheji Honten</small></h4><p>適合第一次吃、想試較有名的文字燒店。可以看看明太子麻糬起司或海鮮口味，週六需留意排隊。</p><div class="meta"><a class="act" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9C%88%E5%B3%B6+%E3%82%82%E3%81%B8%E3%81%98+%E6%9C%AC%E5%BA%97" target="_blank" rel="noopener">地圖</a></div></article><article class="shop"><span class="tag">車站附近／適合輕鬆用餐</span><h4>もんじゃ麦 西仲店 <small>麦 西仲店</small></h4><p>月島站 7 號出口步行約一分鐘。有西仲店限定的番茄蛤蜊燉飯風文字燒，官方列為禁菸店，也有網路預約入口。</p><div class="meta"><a class="act" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%82%E3%82%93%E3%81%98%E3%82%83%E9%BA%A6+%E8%A5%BF%E4%BB%B2%E5%BA%97" target="_blank" rel="noopener">地圖</a></div></article></div><p class="note">原對話的建議：若以爸媽兩個人用餐、交通方便與不想排隊太久為優先，麦 西仲店放第一順位，もへじ第二；兩家都值得先查看 11/21 晚上的訂位選項。</p><p class="note">如果爸媽比較累，可以把 16:05–17:20 的月島散步縮成 30 分鐘，提早吃晚餐回飯店。</p><div class="links"><a class="act" href="https://www.google.com/maps/dir/?api=1&amp;origin=Fukagawa+Fudodo+Tokyo&amp;destination=Tsukishima+Monja+Street+Tokyo&amp;travelmode=transit" target="_blank" rel="noopener">方案 A：深川不動堂 → 月島文字燒商店街</a></div></div>
+<div id="panel-b" role="tabpanel" aria-labelledby="tab-b"><p class="kicker">Plan B</p><h2>方案 B｜晴空塔購物</h2><p class="range">15:30 – 20:00 後 ・ 輕鬆備案</p><p class="note">上午行程維持不變，接續 14:40–15:30 的深川不動堂。店鋪位置已核對 Solamachi 官方樓層指南，一般營業時間 10:00–21:00。</p><div class="pcard"><ol class="tl"><li class="stop"><div class="t"><b>15:30</b><span>至 16:00</span></div><i class="dot" aria-hidden="true"></i><div class="card"><h3>門前仲町 → 押上</h3><p>大江戶線到清澄白河，轉半藏門線到押上。車程約 15–20 分鐘，再加上步行與等車時間即可。</p><div class="meta"><span class="go"><i>導航</i>地鐵轉乘一次</span><a class="act" href="https://www.google.com/maps/dir/?api=1&amp;origin=Fukagawa+Fudodo+Tokyo&amp;destination=Keisei+Richmond+Hotel+Tokyo+Oshiage&amp;travelmode=transit" target="_blank" rel="noopener">路線導航</a></div></div></li><li class="stop"><div class="t"><b>16:00</b><span>至 16:30</span></div><i class="dot" aria-hidden="true"></i><div class="card"><h3>飯店休息</h3><p>放下伴手禮、喝水、休息一下。</p><div class="meta"><a class="act" href="https://www.google.com/maps/search/?api=1&amp;query=Keisei+Richmond+Hotel+Tokyo+Oshiage" target="_blank" rel="noopener">地圖</a></div></div></li><li class="stop"><div class="t"><b>16:30</b><span>至 16:55</span></div><i class="dot key" aria-hidden="true"></i><div class="card key"><h3><span class="pri key" title="優先逛">★</span>GO SLOW CARAVAN<span class="loc">3F Tower Yard 5</span></h3><p>日系戶外休閒服飾。</p></div></li><li class="stop"><div class="t"><b>16:55</b><span>至 17:25</span></div><i class="dot key" aria-hidden="true"></i><div class="card key"><h3><span class="pri key" title="優先逛">★</span>UNIQLO<span class="loc">3F East Yard 8</span></h3><p>HEATTECH、保暖衣。</p><div class="meta"><a class="flag" href="#check-7" aria-label="待確認事項 7">待確認 7</a></div></div></li><li class="stop"><div class="t"><b>17:25</b><span>至 17:50</span></div><i class="dot key" aria-hidden="true"></i><div class="card key"><h3><span class="pri key" title="優先逛">★</span>Onitsuka Tiger<span class="loc">3F East Yard 10</span></h3><p>日本鞋款、休閒服飾。</p><div class="meta"><a class="flag" href="#check-6" aria-label="待確認事項 6">待確認 6</a><a class="flag" href="#check-7" aria-label="待確認事項 7">待確認 7</a></div></div></li><li class="stop"><div class="t"><b>17:50</b><span>至 18:10</span></div><i class="dot key" aria-hidden="true"></i><div class="card key"><h3><span class="pri key" title="優先逛">★</span>SORA<span class="loc">3F East Yard 10</span></h3><p>戶外機能服飾選物。</p><div class="meta"><a class="flag" href="#check-6" aria-label="待確認事項 6">待確認 6</a></div></div></li><li class="stop"><div class="t"><b>18:10</b><span>至 18:25</span></div><i class="dot" aria-hidden="true"></i><div class="card"><h3><span class="pri opt" title="有時間再逛">○</span>URBAN RESEARCH Store<span class="loc">3F East Yard 11</span></h3><p>日系生活服飾。</p></div></li><li class="stop"><div class="t"><b>18:25</b><span>至 18:50</span></div><i class="dot key" aria-hidden="true"></i><div class="card key"><h3><span class="pri key" title="優先逛">★</span>CHUMS<span class="loc">4F East Yard 9</span></h3><p>帽子、包包、刷毛衣。</p></div></li><li class="stop"><div class="t"><b>19:00</b><span>至 20:00</span></div><i class="dot" aria-hidden="true"></i><div class="card"><h3>Solamachi 晚餐</h3><p>6F、7F 餐廳樓層。</p><div class="meta"><a class="flag" href="#check-5" aria-label="待確認事項 5">待確認 5</a></div></div></li><li class="stop"><div class="t"><b>20:00</b><span>之後</span></div><i class="dot" aria-hidden="true"></i><div class="card"><h3>回飯店</h3><p>步行即可，結束行程。</p></div></li></ol></div><div class="links"><a class="act" href="https://www.tokyo-solamachi.jp/floorguide/solamachi_en_261029.pdf" target="_blank" rel="noopener">晴空塔官方樓層圖</a><a class="act" href="https://www.google.com/maps/dir/?api=1&amp;origin=Fukagawa+Fudodo+Tokyo&amp;destination=Tokyo+Solamachi&amp;travelmode=transit" target="_blank" rel="noopener">方案 B：深川不動堂 → 晴空塔 Solamachi</a></div><h5>如果爸媽更早就累了</h5><p class="note" style="margin-top:0">不一定要走到 15:30 才回飯店，可以在這幾個時間點調整。</p><div class="rows"><div class="row"><b>12:55 商店街逛完</b><span>可以直接返回押上，在晴空塔吃午餐，再自由購物。</span></div><div class="row"><b>14:10 午餐結束</b><span>略過人情深川ご利益通り與深川不動堂，約 15:00 回飯店。</span></div><div class="row"><b>15:30 寺院參拜後</b><span>完成所有白天文化行程，改回晴空塔，不去月島。</span></div><div class="row"><b>16:30 回飯店後</b><span>若還是很累，直接休息，晚上再到 Solamachi 吃飯。</span></div></div><div class="links"><a class="act" href="https://www.google.com/maps/dir/?api=1&amp;origin=Kiyosumi+Shirakawa+Station&amp;destination=Tokyo+Solamachi&amp;travelmode=transit" target="_blank" rel="noopener">提早結束：清澄白河 → 晴空塔</a></div><p class="note">如果爸媽真的累了，建議先回飯店休息，而不是立刻進商場。晴空塔就在飯店旁邊，購物時間完全可以縮短。</p><p class="note">爸媽 11/20 已入住。若當晚已逛過 UNIQLO、Onitsuka Tiger 等店，11/21 下午只挑 GO SLOW CARAVAN、SORA、CHUMS 等還沒看的店，剩下時間提早吃晚餐、回飯店休息。<a class="flag" href="#check-7" aria-label="待確認事項 7">待確認 7</a></p></div>
+</section>
+<section class="sec" id="shops"><p class="kicker">Shop notes</p><h2>店家備忘</h2><h5 id="shops-1">深川資料館通り商店街｜全部候選店家</h5><p class="note" style="margin-top:-4px;margin-bottom:12px">建議停留 11:40–12:55，實際挑 3–4 間進去即可。清澄白河的店鋪位置有些分散，不建議硬照順序全部逛完。可以先選江戶伴手禮、田巻屋、BEE FRIENDSHIP，看到喜歡的陶器店再進去。</p><div class="shops"><article class="shop"><h4><span class="pri key" title="優先逛">★</span>江戸みやげ屋たかはし</h4><p>江戶零食、傳統童玩、深川飯調理包。</p></article><article class="shop"><h4><span class="pri key" title="優先逛">★</span>田巻屋 深川清澄白河本店</h4><p>和服、手拭巾、日式布料、祭典小物。</p></article><article class="shop"><h4><span class="pri key" title="優先逛">★</span>BEE FRIENDSHIP 完熟屋</h4><p>蜂蜜、蜂蜜冰淇淋、特色飲品和伴手禮。</p></article><article class="shop"><h4><span class="pri opt" title="有時間再逛">○</span>青葉堂</h4><p>日式陶瓷、茶杯、飯碗、生活器物。</p></article><article class="shop"><h4><span class="pri opt" title="有時間再逛">○</span>POTPURRI 清澄白河</h4><p>設計陶器與生活雜貨；11/21 期間還有冬季帽子、圍巾主題企劃，很適合買保暖配件。官方公告中午 12:30–13:30 休息，建議在 12:30 前逛。</p><div class="meta"><a class="flag" href="#check-1" aria-label="待確認事項 1">待確認 1</a></div></article><article class="shop"><h4><span class="pri opt" title="有時間再逛">○</span>Futaba <small>御菓子司 双葉</small></h4><p>傳統和菓子、銅鑼燒、羊羹。官方資料註明只收現金。</p></article><article class="shop"><h4><span class="pri opt" title="有時間再逛">○</span>和菓子司 菊祝園 庄之助</h4><p>和菓子老店，位置在商店街較東側，可視步行距離決定。</p></article><article class="shop"><h4><span class="pri opt" title="有時間再逛">○</span>First Crop Coffee Roastery</h4><p>精品咖啡、單品咖啡豆；偏東側的額外咖啡選項。</p></article></div><h5 id="shops-2">人情深川ご利益通り｜建議逛的店</h5><div class="shops"><article class="shop"><h4><span class="pri key" title="優先逛">★</span>梅花亭 <small>Baikatei</small></h4><p>江戶時代創業的和菓子老店，推薦梅花形最中餅、傳統銅鑼燒。深川店官方營業時間 10:00–16:00，排在 14:10 很合適。</p></article><article class="shop"><h4><span class="pri key" title="優先逛">★</span>近為 深川店</h4><p>京都老字號漬物，適合買日式醃菜作為伴手禮。11 月公布營業時間到 17:30。</p></article><article class="shop"><h4><span class="pri opt" title="有時間再逛">○</span>深川伊勢屋 本店</h4><p>日式糰子、大福等傳統點心，如果不想再吃太多甜食，看看店面即可。</p></article></div><p class="note">兩家首選店鋪都在深川不動堂參道附近，結束後直接前往寺院，不需要再折返。</p></section>
+<section class="check" id="check"><h2>待確認事項</h2><div class="check-body"><p class="note" style="margin-top:10px">以下是整理兩份對話時發現的時間或資訊矛盾。頁面中的行程都照原對話，沒有擅自更動。</p><ol><li id="check-1"><i>1</i><div><b>POTPURRI 的午休與商店街停留時段重疊</b><p>POTPURRI 公告 12:30–13:30 休息，但商店街預定停留到 12:55。需要在 12:30 前到，或調整逛店順序。</p><p class="where">出現在：11:40 深川資料館通り、店家備忘</p></div></li><li id="check-2"><i>2</i><div><b>前往門前仲町的時間偏緊</b><p>12:55–13:20 只留 25 分鐘，原文步行估 20–30 分鐘。走滿 30 分鐘會比午餐 13:20 晚約 5 分鐘；原文另提供「累了搭大江戶線一站」。</p><p class="where">出現在：12:55 前往門前仲町</p></div></li><li id="check-3"><i>3</i><div><b>護摩儀式需要多久</b><p>14:40–15:30 含 15:00 護摩儀式，原對話沒有寫儀式時間長度。方案 A、B 都在 15:30 離開，請確認是否足夠。</p><p class="where">出現在：14:40 深川不動堂</p></div></li><li id="check-4"><i>4</i><div><b>方案 A 的時間，摘要與完整表不同</b><p>B 對話中整理 A 為 16:00 月島商店街、17:30 晚餐、19:30 左右回飯店；A 完整時間表是 16:05、17:20、19:35 之後。頁面採用完整時間表。</p><p class="where">出現在：方案 A</p></div></li><li id="check-5"><i>5</i><div><b>方案 B 的晚餐時間，摘要與詳細表不同</b><p>摘要寫「18:30 晚餐、回飯店」；詳細表是逛店到 18:50、19:00–20:00 晚餐、20:00 後回飯店。頁面採用詳細時間表。</p><p class="where">出現在：方案 B、19:00 Solamachi 晚餐</p></div></li><li id="check-6"><i>6</i><div><b>Onitsuka Tiger 與 SORA 的位置相同</b><p>兩間店都寫「3F East Yard 10」，同一個編號給兩間店，可能有一個寫錯。</p><p class="where">出現在：方案 B、17:25 與 17:50</p></div></li><li id="check-7"><i>7</i><div><b>UNIQLO、Onitsuka Tiger 是否還要逛</b><p>表中兩間標為 ★，但結尾建議：若 11/20 晚上已逛過，11/21 就不用再逛，只挑 GO SLOW CARAVAN、SORA、CHUMS 等還沒看的店。請確認 11/20 逛過哪些。</p><p class="where">出現在：方案 B、16:55 與 17:25</p></div></li></ol></div><label class="swt"><input type="checkbox" id="flagsw" checked> 顯示待確認標記（分享給爸媽前可以關閉）</label></section>
+<p class="foot">11/21（六）爸媽東京一日遊。從京成 Richmond Hotel 東京押上出發。行程、時間、店家與住宿資訊依兩份對話整理，營業時間與費用以各店最新公告為準。</p>
+</main></div>
+<script>
+(function(){
+  var tabs=[document.getElementById('tab-a'),document.getElementById('tab-b')];
+  var panels=[document.getElementById('panel-a'),document.getElementById('panel-b')];
+  function show(i,scroll){
+    for(var k=0;k<2;k++){
+      var on=(k===i);
+      tabs[k].setAttribute('aria-selected',on?'true':'false');
+      tabs[k].tabIndex=on?0:-1;
+      panels[k].hidden=!on;
+    }
+    try{history.replaceState(null,'','#plan-'+(i===0?'a':'b'));}catch(e){}
+    if(scroll){
+      var el=document.getElementById('afternoon');
+      var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      try{el.scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'});}catch(e){el.scrollIntoView();}
+    }
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(i,true);});
+    t.addEventListener('keydown',function(e){
+      if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();var j=1-i;show(j,false);tabs[j].focus();}
+    });
+  });
+  function fromHash(){return location.hash==='#plan-b'?1:0;}
+  window.addEventListener('hashchange',function(){show(fromHash(),false);});
+  show(fromHash(),false);
+  var sw=document.getElementById('flagsw');
+  if(sw){sw.addEventListener('change',function(){document.body.classList.toggle('hide-flags',!sw.checked);});}
+})();
+</script>
+</body></html>
